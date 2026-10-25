@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>English</Name>
+  <Code>EN</Code>
+  <Things>
+    <RecordThing>
+      <Key>StructureFastVent</Key>
+      <Value>Fast Vent</Value>
+      <Description>An {THING:StructureActiveVent} with a bigger pump. It works the same way, with the same modes, pressure settings and power draw, but moves gas several times faster in both directions. In a room bigger than one grid, it also pulls gas from (or pushes it into) the spaces around it, like the {THING:StructurePoweredVentLarge}.
+
+{HEADER:Multiplier}
+How much faster is its {COLORORANGE:Setting}: from 1 (as fast as an Active Vent) to 20. A new Fast Vent starts at 5. Set it with a {THING:StructureLogicWriter} or a chip, for example {COLORYELLOW:s d0 Setting 10}. Values outside 1 to 20 are clamped. The vent still stops at its pressure settings, so it slows down as it nears them, like any vent.</Description>
+    </RecordThing>
+    <RecordThing>
+      <Key>ItemKitFastVent</Key>
+      <Value>Kit (Fast Vent)</Value>
+      <Description>When constructed, this kit places a {THING:StructureFastVent} on any support structure.</Description>
+    </RecordThing>
+    <RecordThing>
+      <Key>StructurePressureReliefVent</Key>
+      <Value>Pressure Relief Vent</Value>
+      <Description>A {THING:StructurePassiveVent} with a spring-loaded flap. Gas from the room flows into the pipe as through any passive vent, but gas only leaves the pipe when the pipe is above {COLORORANGE:5 MPa}, and then only the gas above 5 MPa: the pipe is held at 5 MPa and the flap closes again. If the room itself is above 5 MPa, the two even out like a passive vent.
+
+Its body is a tank: it adds as much volume to its pipe network as an in-line {THING:StructureTankSmallInLine}.</Description>
+    </RecordThing>
+    <RecordThing>
+      <Key>ItemKitPressureReliefVent</Key>
+      <Value>Kit (Pressure Relief Vent)</Value>
+      <Description>When constructed, this kit places a {THING:StructurePressureReliefVent} on any support structure.</Description>
+    </RecordThing>
+  </Things>
+</Language>

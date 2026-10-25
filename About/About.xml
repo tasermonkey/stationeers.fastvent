@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Fast Vent</Name>
+  <ModID>tasermonkey.fastvent</ModID>
+  <Author>tasermonkey</Author>
+  <Version>1.0.0</Version>
+  <!-- Steam description, with Steam's markup -->
+  <Description>[h1]Fast Vent[/h1]
+This is a Plugin Mod. It requires BepInEx with the StationeersLaunchPad plugin: https://github.com/StationeersLaunchPad/StationeersLaunchPad
+
+I have made enough airlocks now.  So I wanted something that can make the 1x1x1 airlock I make all the time fast, so that I don't need patience.
+So these two vents allows us to make the same setup as before, just replace the original Active Vent and passive vent with these two new vents.  
+
+[b]What this mod adds[/b]
+[list]
+[*] The [b]Fast Vent[/b]: an Active Vent that moves gas several times faster, inward and outward. It looks and works like the Active Vent: same modes, pressure settings and power draw. In a room bigger than one grid, it also pulls from and fills the cells open to it, like the large Powered Vent.
+[*] The [b]Pressure Relief Vent[/b]: a Passive Vent that only lets gas out of its pipe above 5 MPa, and then only the gas above 5 MPa, so the pipe is held at 5 MPa. Gas from the room flows into the pipe as through a Passive Vent. It holds as much gas as an in-line Small Tank.
+[*] Their kits, printed in the Hydraulic Pipe Bender for the same materials as the vanilla vents' kits.
+[/list]
+
+[b]The Fast Vent's multiplier[/b]
+The vent's [b]Setting[/b] is how many times faster it is: 1 to 20, 5 when built. Set it with a Logic Writer or a chip ([i]s d0 Setting 10[/i]). Its tooltip shows the current multiplier.
+
+In multiplayer every player needs the mod.
+  </Description>
+  <!-- In-game description, with TextMeshPro tags -->
+  <InGameDescription><![CDATA[<size="30"><color=#ffa500>Fast Vent</color></size>
+Adds the Fast Vent: an Active Vent that moves gas several times faster, inward and outward. Its Setting is the multiplier: 1 to 20, 5 when built. Set it with a Logic Writer or a chip (s d0 Setting 10). In a room bigger than one grid, it also pulls from and fills the cells open to it, like the large Powered Vent.
+
+Adds the Pressure Relief Vent: a Passive Vent that only lets gas out of its pipe above 5 MPa, and then only the gas above 5 MPa. Gas from the room flows into the pipe as through a Passive Vent. It holds as much gas as an in-line Small Tank.
+
+Both kits are printed in the Hydraulic Pipe Bender.
+]]></InGameDescription>
+  <ChangeLog>v1.0.0
+- First version
+  </ChangeLog>
+  <Tags>
+    <Tag>Atmospherics</Tag>
+    <Tag>BepInEx</Tag>
+    <Tag>StationeersLaunchPad</Tag>
+  </Tags>
+</ModMetadata>

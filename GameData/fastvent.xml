@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <HydraulicPipeBenderRecipes>
+    <RecipeData>
+      <PrefabName>ItemKitFastVent</PrefabName>
+      <Recipe>
+        <Time>5</Time>
+        <Energy>500</Energy>
+        <Iron>5</Iron>
+        <Copper>5</Copper>
+        <Gold>1</Gold>
+      </Recipe>
+    </RecipeData>
+    <RecipeData>
+      <PrefabName>ItemKitPressureReliefVent</PrefabName>
+      <Recipe>
+        <Time>5</Time>
+        <Energy>500</Energy>
+        <Iron>3</Iron>
+      </Recipe>
+    </RecipeData>
+  </HydraulicPipeBenderRecipes>
+</GameData>
